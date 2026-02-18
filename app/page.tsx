@@ -19,7 +19,7 @@ export default function Home() {
           <p className="relative z-10 text-2xl text-neutral-300">
             Делаю интерфейсы, которые выглядят просто и адаптивно работают <br />
             Основной стек — <span className="underline decoration-accent">TypeScript</span>, <span className="underline decoration-accent">Nuxt (Vue)</span>, <span className="underline decoration-accent">TailwindCSS</span> <br />
-            Владею так же React, JavaScript, Sass, Astro, Python, SQL, Vite
+            Владею так же React, JavaScript, Sass, Astro, Python, Vite, SQL
           </p>
           <div className="absolute size-132 rounded-full bg-[#3178C6] -bottom-60 -left-60 blur-3xl opacity-5 group-hover/frontend:opacity-10 duration-500 transition-all" />
         </div>
