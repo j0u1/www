@@ -3,7 +3,7 @@ import H2 from "../UI/Heading/H2";
 import P from "../UI/Heading/P";
 
 export default function Skills() {
-  const iconSizes = "size-5 md:size-6 lg:size-8 duration-300 transition-all"
+  const iconSizes = "hover:scale-110 size-5 md:size-6 lg:size-8 duration-300 transition-all"
 
   return (
     <section className="absolute bottom-0 left-0 right-0 p-4 lg:p-8 duration-300 transition-all w-full flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between">
