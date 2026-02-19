@@ -3,7 +3,7 @@ import LogoAndAvatar from "./LogoAndAvatar";
 
 export default function About() {
   return (
-    <section className="min-h-162.5 h-[85dvh] flex items-center justify-center">
+    <section className="min-h lg:min-h-162.5 h-[63dvh] lg:h-[85dvh] flex items-center justify-center">
       <H1 className="flex items-center gap-4 group">
         <Cross />
         <span className="flex gap-2 items-center">Hey, I'm <LogoAndAvatar /> diy</span>
