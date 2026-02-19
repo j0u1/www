@@ -15,7 +15,7 @@ export default function About() {
 
 function Cross() {
   return (
-    <p className="text-neutral-500 flex gap-0.5 select-none" aria-hidden>
+    <p className="text-additional/70 flex gap-0.5 select-none" aria-hidden>
       <span className="transition-transform duration-500 group-hover:rotate-45">+</span>
       <span className="transition-transform duration-500 group-hover:rotate-45">+</span>
     </p>
