@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function LogoAndAvatar() {
   const [changeLogo, setChangeLogo] = useState(true);
   const sizeClass = "size-8 md:size-10 lg:size-14"
-  const logoClasses = `${sizeClass} hover:scale-105 active:scale-105 duration-300 transition-all origin-center`
+  const logoClasses = `${sizeClass} hover:scale-105 active:scale-105 duration-300 transition-all origin-bottom-right`
 
   return (
     <div onClick={() => setChangeLogo(!changeLogo)} className={`${sizeClass} cursor-pointer`}>
