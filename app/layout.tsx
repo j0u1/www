@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Onest } from "next/font/google";
 import "./globals.css";
 
-const onest = Montserrat({
+const onest = Onest({
   variable: "--font-onest",
   subsets: ["latin"],
 });
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${onest.variable} duration-300 transition-all flex flex-col gap-4 lg:gap-8 p-4 lg:p-8`}>
+      <body className={`${onest.variable} antialiased duration-300 transition-all flex flex-col gap-6 lg:gap-12 p-4 lg:p-8`}>
         {children}
       </body>
     </html>
