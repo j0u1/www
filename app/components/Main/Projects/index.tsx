@@ -3,6 +3,9 @@ import Image from "next/image";
 import H1 from "../../UI/Heading/H1";
 import { projects } from "../../../data/projects";
 
+
+// TODO: Расположить всё по компонентам
+// TODO: Добавить отдельную страницу под каждый проект, чтобы можно было описать для кого и почему, если такую информация я добавил
 export default function Projects() {
 
   return (
