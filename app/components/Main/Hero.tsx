@@ -6,9 +6,9 @@ import Skills from "./Skills";
 export default function Hero() {
   return (
     // lg:h-[85dvh]
-    <section className="relative min-h-200 lg:min-h-162.5 lg:h-[94dvh] flex items-center justify-center">
+    <section className="relative min-h-[97dvh] lg:min-h-162.5 lg:h-[94dvh] flex items-center justify-center">
       <Links />
-      <H1 className="flex items-center gap-4 group">
+      <H1 className="flex items-center gap-4 group h-full md:pb-30 xl:pb-22 duration-300 transition-all">
         <Cross />
         <span className="flex gap-2 items-center">Hey, I'm <LogoAndAvatar /> diy</span>
         <Cross />
