@@ -15,7 +15,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="space-y-4 transition-all duration-1000 columns-1 md:columns-2 xl:columns-3">
+      <div className="space-y-2.5 transition-all duration-1000 columns-1 md:columns-2 xl:columns-3">
         {projects.map((project, i) => {
           const Component = project.link ? "a" : "div"
 
