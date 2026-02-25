@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${onest.variable} antialiased duration-100 transition-all flex flex-col gap-4 lg:gap-8 min-h-dvh`}>
+      <body className={`${onest.variable} duration-300 transition-all flex flex-col gap-4 lg:gap-8 p-4 lg:p-8`}>
         {children}
       </body>
     </html>

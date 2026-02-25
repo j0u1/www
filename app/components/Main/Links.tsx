@@ -9,7 +9,7 @@ export default function Links() {
   const isDark = theme === "dark";
 
   return (
-    <div className="absolute flex flex-col gap-4 top-4 right-4 lg:top-8 lg:right-8 duration-300 transition-all">
+    <div className="absolute flex flex-col gap-4 top-0 right-0 duration-300 transition-all">
       <Link
         className="text-additional/70 dark:text-additional hover:text-accent duration-300 transition-all scale-100 hover:scale-110 inline-block"
         href="https://github.com/j0u1"

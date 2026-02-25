@@ -1,13 +1,13 @@
-import About from "./components/Main/About";
-import Links from "./components/Main/Links";
-import Skills from "./components/Main/Skills";
+import Hero from "./components/Main/Hero";
+import H2 from "./components/UI/Heading/H2";
 
 export default function Home() {
   return (
-    <main className="relative min-h-dvh">
-      <Links />
-      <About />
-      <Skills />
-    </main>
+    <>
+      <Hero />
+      <section className="">
+        <H2>Проекты</H2>
+      </section>
+    </>
   );
 }
