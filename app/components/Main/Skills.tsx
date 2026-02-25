@@ -21,7 +21,7 @@ export default function Skills() {
               </span>
             ))}
           </P>
-          <div className={`absolute size-132 rounded-full opacity-5 -bottom-60 blur-3xl duration-500 transition-all ${skill.right ? 'group-hover/uxui:opacity-10 bg-[#F24e1e] -right-60' : 'group-hover/frontend:opacity-10 bg-[#3178c6] -left-60'}`} />
+          <div className={`absolute size-132 rounded-full opacity-5 -bottom-60 blur-3xl duration-500 transition-all pointer-events-none ${skill.right ? 'group-hover/uxui:opacity-10 bg-[#F24e1e] -right-60' : 'group-hover/frontend:opacity-10 bg-[#3178c6] -left-60'}`} />
         </div>
       ))}
     </section>
