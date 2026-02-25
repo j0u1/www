@@ -6,6 +6,8 @@
   --secondary: #252637;
   --accent: #4d8ff3;
   --additional: #737373;
+  --button: #1e1f2e;
+  --button-foreground: #222335;
 }
 
 
@@ -15,6 +17,8 @@
   --secondary: #252637;
   --accent: #4d8ff3;
   --additional: #d4d4d4;
+  --button: #1e1f2e;
+  --button-foreground: #222335;
 }
 
 
@@ -24,15 +28,17 @@
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --color-additional: var(--additional);
+  --color-button: var(--button);
+  --color-button-foreground: var(--button-foreground)
 }
 
 * {
-    scrollbar-gutter: stable both-edges;
+  scrollbar-gutter: stable both-edges;
 }
 
 html {
   background: var(--background);
   color: var(--foreground);
   font-family: Onest, Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
