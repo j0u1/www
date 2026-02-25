@@ -6,7 +6,7 @@ export default function Skills() {
   const iconSizes = "hover:scale-110 size-5 md:size-6 lg:size-8 duration-300 transition-all"
 
   return (
-    <section className="absolute bottom-0 left-0 right-0 p-4 lg:p-8 duration-300 transition-all w-full flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between">
+    <section className="absolute bottom-0 left-0 right-0 duration-300 transition-all w-full flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between">
       {skillsText.map((skill, index) => (
         <div key={index} className={`relative flex flex-col gap-6 ${skill.right ? 'text-right group/uxui' : 'text-left group/frontend'}`}>
           <H2 className={`relative z-10 leading-none flex items-center gap-3.5 ${skill.right ? 'justify-end' : 'justify-start'}`}>

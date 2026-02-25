@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section className="">
+      {/* <section className="">
         <H2>Проекты</H2>
-      </section>
+      </section> */}
     </>
   );
 }
