@@ -1,3 +1,4 @@
+import { iconProps } from "@/app/types/icon";
 
 
 
