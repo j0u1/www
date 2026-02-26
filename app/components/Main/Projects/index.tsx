@@ -24,8 +24,9 @@ export default function Projects() {
 
           return (
             <Component
+              draggable={!!project.link}
               key={i}
-              className={`break-inside-avoid overflow-hidden rounded-xl outline outline-secondary/70 h-fit group/project inline-block select-none ${project.link ? 'cursor-pointer' : 'pointer-events-none'}`}
+              className={`break-inside-avoid overflow-hidden rounded-xl outline outline-secondary/70 h-fit group/project inline-block select-none transition-all duration-300 ${project.link ? 'cursor-pointer hover:brightness-125' : 'pointer-events-none'}`}
               href={project.link}
               target="_blank"
             >
