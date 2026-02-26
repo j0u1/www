@@ -1,4 +1,4 @@
-import { iconProps } from "@/app/types/icon";
+import { iconProps } from "@/app/types/icons";
 
 export default function Logo({ className }: iconProps) {
   return (
