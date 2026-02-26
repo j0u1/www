@@ -44,4 +44,5 @@ html {
 
 body {
   font-family: Onest, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
