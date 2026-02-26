@@ -40,7 +40,7 @@ export default function Projects() {
 
                 {project.title && (
                   <div className={`absolute left-4 space-y-2 ${project.position === 'bottom' ? 'bottom-4' : 'top-4'}`}>
-                    <h2 className="text-sm font-medium text-neutral-200">
+                    <h2 className="text-sm font-medium text-neutral-300">
                       {project.title}
                     </h2>
                   </div>
@@ -49,7 +49,7 @@ export default function Projects() {
 
               {project.link && (
                 <div className="inline-block p-1.5 w-full cursor-pointer h-fit">
-                  <div className="flex gap-2 justify-center items-center p-3.5 mx-auto font-medium text-center rounded-lg transition-all duration-500 text-neutral-200 bg-button group-hover/project:bg-button-foreground">
+                  <div className="flex gap-2 justify-center items-center p-3.5 mx-auto font-medium text-center rounded-lg transition-all duration-500 text-neutral-300 bg-button group-hover/project:bg-button-foreground">
                     <ArrowUpRightIcon className="transition-all duration-500 group-hover/project:translate-x-1 group-hover/project:-translate-y-0.75" size={20} />
                     Посмотреть
                   </div>
