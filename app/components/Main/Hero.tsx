@@ -5,7 +5,6 @@ import Skills from "./Skills";
 
 export default function Hero() {
   return (
-    // lg:h-[85dvh]
     <section className="flex relative justify-center items-center pb-36 transition-all duration-500 min-h-[97dvh] md:pb-30 lg:min-h-162.5 lg:h-[94dvh] xl:pb-22">
       <Links />
       <H1 className="flex gap-4 items-center group">
