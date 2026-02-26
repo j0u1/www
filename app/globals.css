@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f5f5fa;
   --foreground: #171717;
-  --secondary: #252637;
+  --secondary: #b8bade;
   --accent: #4d8ff3;
   --additional: #737373;
-  --button: #1e1f2e;
-  --button-foreground: #222335;
+  --button: #5d65d6;
+  --button-foreground: #494fbd;
 }
 
 
@@ -17,8 +17,8 @@
   --secondary: #252637;
   --accent: #4d8ff3;
   --additional: #d4d4d4;
-  --button: #1e1f2e;
-  --button-foreground: #222335;
+  --button: #212335;
+  --button-foreground: #282b42;
 }
 
 
@@ -32,13 +32,17 @@
   --color-button-foreground: var(--button-foreground)
 }
 
-* {
-  scrollbar-gutter: stable both-edges;
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
 }
 
 html {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Onest, Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
+}
+
+body {
+  font-family: Onest, Arial, Helvetica, sans-serif;
 }
