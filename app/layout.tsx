@@ -14,7 +14,6 @@ export const metadata: Metadata = {
     title: 'diy',
     description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
     url: 'https://d1yy.ru',
-    siteName: 'diy',
     images: [
       {
         url: '/images/metadata/ogImage.jpg',
