@@ -5,7 +5,7 @@ import Skills from "./Skills";
 
 export default function Hero() {
   return (
-    <section className="flex relative justify-center items-center pb-36 transition-all duration-500 min-h-162 lg:min-h-162.5 lg:h-[94dvh] md:pb-30  xl:pb-22">
+    <section className="flex relative justify-center items-center pb-36 transition-all duration-500 min-h-160 lg:min-h-162.5 lg:h-[94dvh] md:pb-30  xl:pb-22">
       <Links />
       <H1 className="flex gap-4 items-center group">
         <Cross />
