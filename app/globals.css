@@ -10,7 +10,6 @@
   --button-foreground: #494fbd;
 }
 
-
 .dark {
   --background: #171824;
   --foreground: #ffffff;
@@ -21,6 +20,7 @@
   --button-foreground: #282b42;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
