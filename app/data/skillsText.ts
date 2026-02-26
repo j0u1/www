@@ -8,7 +8,7 @@ export const skillsText = [
     description: [
       "Делаю интерфейсы, которые выглядят просто и адаптивно работают.",
       "Основной стек — TypeScript, Nuxt (Vue), TailwindCSS.",
-      "Владею так же React, JavaScript, Sass, Astro, Python, Vite, SQL"
+      "Владею также React, JavaScript, Sass, Astro, Python, Vite, SQL"
     ]
   },
   {
