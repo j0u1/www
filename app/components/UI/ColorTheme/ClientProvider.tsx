@@ -17,7 +17,6 @@ export const ColorThemeClientProvider: FC<Props> = (({ children, cookieTheme }) 
   }, [])
   useEffect(() => {
     if(!cookieTheme || !COLOR_THEMES.includes(cookieTheme as ColorTheme)) {
-      console.log("сын мёртвой шлюхи: ", cookieTheme, COLOR_THEMES.includes(cookieTheme as ColorTheme))
       const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches
       setTheme(prefersLight ? 'light' : 'dark')
     }
