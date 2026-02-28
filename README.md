@@ -1,4 +1,6 @@
-Проект на [Next.js](https://nextjs.org) (React), [Tailwind](https://tailwindcss.com). Деплой через [Vercel](https://vercel.com)
+Проект на [Next.js](https://nextjs.org) (React), [Tailwind](https://tailwindcss.com), деплой через [Vercel](https://vercel.com), иконки [LucideIcons](https://lucide.dev)
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c87de39-4a14-4e4e-8716-6fb46a5cdd38" />
 
 ## Первоначальная настройка
 
