@@ -2,7 +2,6 @@
 
 import { FC, PropsWithChildren, useCallback, useEffect, useState } from "react"
 import { COLOR_THEMES, ColorTheme, colorThemeCtx } from "./ctx"
-import { log } from "console"
 
 type Props = PropsWithChildren<{
   cookieTheme?: string | null,
