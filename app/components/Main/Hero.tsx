@@ -9,19 +9,28 @@ export default function Hero() {
       <Links />
       <H1 className="flex gap-4 items-center group">
         <Cross />
-        <span className="flex gap-2 items-center">Hey, I'm <LogoAndAvatar /> diy</span>
+        <span className="flex gap-2 items-center">
+          Hey, I&apos;m <LogoAndAvatar /> diy
+        </span>
         <Cross />
       </H1>
       <Skills />
     </section>
-  )
+  );
 }
 
 function Cross() {
   return (
-    <p className="flex gap-0.5 font-normal select-none text-additional/70" aria-hidden>
-      <span className="transition-transform duration-500 group-hover:rotate-45">+</span>
-      <span className="transition-transform duration-500 group-hover:rotate-45">+</span>
+    <p
+      className="flex gap-0.5 font-normal select-none text-additional/70"
+      aria-hidden
+    >
+      <span className="transition-transform duration-500 group-hover:rotate-45">
+        +
+      </span>
+      <span className="transition-transform duration-500 group-hover:rotate-45">
+        +
+      </span>
     </p>
-  )
+  );
 }
