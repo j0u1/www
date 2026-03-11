@@ -1,7 +1,8 @@
 import FigmaLogo from "../components/icons/Logos/FigmaLogo";
 import TSLogo from "../components/icons/Logos/TSLogo";
+import { Skills } from "../types/skills";
 
-export const skillsText = [
+export const SKILLS: Skills[] = [
   {
     icon: TSLogo,
     title: "FrontEnd-разработчик",
@@ -21,4 +22,4 @@ export const skillsText = [
     ],
     right: true
   }
-];
+] as const

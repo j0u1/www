@@ -1,4 +1,6 @@
-export const projects = [
+import { Projects } from "../types/projects";
+
+export const PROJECTS: Projects[] = [
   {
     title: "StarHub",
     description:
@@ -53,4 +55,4 @@ export const projects = [
     image: "/images/projects/spemotes.png",
     link: "https://spemotes.spoverlay.ru/",
   },
-];
+] as const

@@ -1,7 +1,7 @@
 import { ArrowUpRightIcon } from "lucide-react";
 import Image from "next/image";
 import H1 from "../../UI/Heading/H1";
-import { projects } from "../../../data/projects";
+import { PROJECTS } from "../../../data/projects";
 
 
 // TODO: Расположить всё по компонентам
@@ -19,7 +19,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="space-y-2.5 transition-all duration-1000 columns-1 md:columns-2 xl:columns-3">
-        {projects.map((project, i) => {
+        {PROJECTS.map((project, i) => {
           const Component = project.link ? "a" : "div"
 
           return (

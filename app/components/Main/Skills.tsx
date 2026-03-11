@@ -1,4 +1,4 @@
-import { skillsText } from "@/app/data/skillsText";
+import { SKILLS } from "@/app/data/skillsText";
 import H2 from "../UI/Heading/H2";
 import P from "../UI/Heading/P";
 
@@ -7,7 +7,7 @@ export default function Skills() {
 
   return (
     <section className="flex absolute right-0 bottom-0 left-0 flex-col gap-4 justify-between w-full transition-all duration-300 lg:flex-row lg:gap-0">
-      {skillsText.map((skill, index) => (
+      {SKILLS.map((skill, index) => (
         <div key={index} className={`relative flex flex-col gap-6 ${skill.right ? 'text-right group/uxui' : 'text-left group/frontend'}`}>
           <H2 className={`relative z-10 leading-none flex items-center gap-3.5 ${skill.right ? 'justify-end' : 'justify-start'}`}>
             {skill.right && skill.icon && <skill.icon className={`${iconSizes}`} />}
