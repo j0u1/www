@@ -25,9 +25,13 @@ export default function Projects() {
         <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
       <div className={`space-y-2.5 transition-all duration-1000 min-h-87.5 ${filteredProjects.length !== 0 ? "columns-1 md:columns-2 xl:columns-3" : "flex flex-col justify-center"}`}>
-        {filteredProjects.length ? filteredProjects.map(project => <ProjectCard key={project.title} project={project} /> )
-        :
-        ( <NotFound /> )
+        {filteredProjects.length ? filteredProjects.map(project =>
+            <ProjectCard key={project.title} project={project} /> 
+          )
+          :
+          (
+            <NotFound />
+          )
         }
       </div>
     </section>

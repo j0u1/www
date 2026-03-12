@@ -12,9 +12,9 @@ export default function ProjectCard({ project }: { project: Projects }) {
       href={project.link}
       target="_blank"
     >
-      <div className="relative">
+      <div className={`relative overflow-hidden ${project.link ? "rounded-b-xl" : "h-full rounded-b-none"}`}>
         <Image
-          className={`w-full object-cover object-top ${project.link ? "rounded-b-xl" : "h-full rounded-b-none"}`}
+          className="w-full object-cover object-top"
           src={project.image}
           alt={`Project ${project.title}`}
           width={1280}
