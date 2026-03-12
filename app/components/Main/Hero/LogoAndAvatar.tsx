@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../icons/Logo";
+import Logo from "../../icons/Logo";
 import { useState } from "react";
 
 export default function LogoAndAvatar() {

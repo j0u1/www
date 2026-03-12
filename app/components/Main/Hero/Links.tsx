@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { GithubIcon } from "lucide-react";
-import { useColorTheme } from "../UI/ColorTheme/useColorTheme";
+import { useColorTheme } from "../../UI/ColorTheme/useColorTheme";
 
 export default function Links() {
   const { theme, toggle } = useColorTheme();

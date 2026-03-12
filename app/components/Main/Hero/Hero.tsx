@@ -1,4 +1,4 @@
-import H1 from "../UI/Heading/H1";
+import H1 from "../../UI/Heading/H1";
 import Links from "./Links";
 import LogoAndAvatar from "./LogoAndAvatar";
 import Skills from "./Skills";

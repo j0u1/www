@@ -1,6 +1,6 @@
 import { SKILLS } from "@/app/data/skillsText";
-import H2 from "../UI/Heading/H2";
-import P from "../UI/Heading/P";
+import H2 from "../../UI/Heading/H2";
+import P from "../../UI/Heading/P";
 
 export default function Skills() {
   const iconSizes = "hover:scale-110 size-5 md:size-6 lg:size-8 duration-300 transition-all"
