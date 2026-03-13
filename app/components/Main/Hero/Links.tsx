@@ -12,7 +12,7 @@ export default function Links() {
   return (
     <div className="flex absolute top-0 right-0 flex-col gap-4 transition-all duration-300">
       <Link
-        className="inline-block transition-all duration-300 hover:scale-105 text-additional hover:text-accent"
+        className="inline-block transition-all duration-300 text-additional hover:text-accent"
         href="https://github.com/j0u1"
         target="_blank"
       >
