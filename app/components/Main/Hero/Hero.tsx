@@ -22,7 +22,7 @@ export default function Hero() {
 function Cross() {
   return (
     <p
-      className="flex gap-0.5 font-normal select-none text-additional/70"
+      className="flex gap-0.5 font-normal select-none text-neutral-500"
       aria-hidden
     >
       <span className="transition-transform duration-500 group-hover:rotate-45">
