@@ -2,6 +2,12 @@ import { Projects } from '../types/projects';
 
 export const PROJECTS: Projects[] = [
   {
+    title: 'инциденты',
+    description: 'Система управления инцидентами',
+    image: '/images/projects/incidents.jpg',
+    link: 'https://incidents.d1yy.ru'
+  },
+  {
     title: 'Docky',
     description: 'Поисковик по готовым Dockerfiles',
     image: '/images/projects/docky.jpg',
