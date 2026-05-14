@@ -3,6 +3,7 @@ import { Onest } from "next/font/google";
 import "./globals.css";
 import { ColorThemeProvider } from "./components/UI/ColorTheme/Provider";
 import { ColorThemeRoot } from "./components/UI/ColorTheme/Root";
+import { cookies } from "next/headers";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -48,13 +49,12 @@ export const viewport: Viewport = {
   maximumScale: 1
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  const cookieStore = await cookies();
+  const theme = cookieStore.get("colorMode")?.value ?? "dark";
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" className={theme} suppressHydrationWarning>
       <body className={`${onest.variable} antialiased`}>
         <ColorThemeProvider>
           <ColorThemeRoot>

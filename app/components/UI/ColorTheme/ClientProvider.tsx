@@ -13,6 +13,9 @@ export const ColorThemeClientProvider: FC<Props> = (({ children, cookieTheme }) 
   const setTheme = useCallback((theme: ColorTheme) => {
     setLocalTheme(theme)
     cookieStore.set("colorMode", theme)
+
+    document.documentElement.classList.remove(...COLOR_THEMES)
+    document.documentElement.classList.add(theme)
   }, [])
   useEffect(() => {
     if(!cookieTheme || !COLOR_THEMES.includes(cookieTheme as ColorTheme)) {
