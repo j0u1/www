@@ -13,6 +13,7 @@ const onest = Onest({
 export const metadata: Metadata = {
   title: "diy",
   description: "Портфолия diy - фронтенд разработчик и UI/UI дизайнер",
+  metadataBase: new URL('http://localhost:3000'),
   openGraph: {
     title: 'diy',
     description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
