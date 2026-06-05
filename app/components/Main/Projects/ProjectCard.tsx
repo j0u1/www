@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: { project: Projects }) {
     <Component
       draggable={!!project.link}
       key={project.title}
-      className={`break-inside-avoid overflow-hidden rounded-xl outline outline-secondary/70 h-fit group/project inline-block select-none transition-all duration-300 w-full ${project.link ? 'cursor-pointer hover:brightness-125' : 'pointer-events-none'}`}
+      className={`break-inside-avoid overflow-hidden rounded-xl outline outline-secondary/70 h-fit group/project inline-block select-none transition-all duration-300 w-full min-w-111 min-h-60.5 ${project.link ? 'cursor-pointer hover:brightness-125' : 'pointer-events-none'}`}
       href={project.link}
       target="_blank"
     >
