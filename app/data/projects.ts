@@ -33,12 +33,6 @@ export const PROJECTS: Projects[] = [
     link: 'https://yat.d1yy.ru',
   },
   {
-    title: 'MJITIOOO',
-    description: 'Личный сайт MJITIOOO',
-    image: '/images/projects/mjitiooo.jpg',
-    link: 'https://mjitiooo.d1yy.ru',
-  },
-  {
     title: 'SP Pack (spoverlay*)',
     description: 'Сайт для скачивания общего ресурс пака СП5',
     image: '/images/projects/sppack.jpg',
@@ -49,6 +43,8 @@ export const PROJECTS: Projects[] = [
     description:
       'Инструмент для МЮ СП5 редактированием и созданием территорий и паспортов',
     image: '/images/projects/portal.jpg',
+    link: 'https://portal.spoverlay.ru',
+    position: 'bottom',
   },
   {
     title: 'PawVille Community',
