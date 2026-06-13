@@ -6,6 +6,7 @@
   --secondary: #b8bade;
   --accent: #4d8ff3;
   --additional: #737373;
+  --additional-foreground: #575757;
   --button: #5d65d6;
   --button-foreground: #494fbd;
 }
@@ -16,6 +17,7 @@
   --secondary: #252637;
   --accent: #4d8ff3;
   --additional: #d4d4d4;
+  --additional-foreground: #7b7b7b;
   --button: #212335;
   --button-foreground: #282b42;
 }
@@ -28,12 +30,14 @@
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --color-additional: var(--additional);
+  --additional-foreground: var(--additional-foreground);
   --color-button: var(--button);
   --color-button-foreground: var(--button-foreground);
 }
 
 /* ✅ Обернуть в @layer base */
 @layer base {
+
   html,
   body {
     background: var(--background);
