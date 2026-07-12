@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { GithubIcon } from 'lucide-react';
 import ModrinthLogo from '../../icons/Logos/ModrinthLogo';
+import Lnk from '../../UI/Lnk';
 
 const links = [
   {
@@ -16,16 +17,16 @@ const links = [
 export default function Links() {
   return (
     <div className="mt-1 flex gap-3.5">
-      {links.map(link => {
+      {links.map((link, id) => {
         const Icon = link.icon;
         return (
-          <Link
-            className="inline-block transition-all duration-300 text-additional hover:text-accent"
+          <Lnk
+          key={id}
             href={link.href}
             target="_blank"
           >
             <Icon className="size-6" />
-          </Link>
+          </Lnk>
         );
       })}
     </div>
