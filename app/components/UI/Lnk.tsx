@@ -5,8 +5,9 @@ type Url = string | UrlObject;
 type LinkType = {
     id?: number;
     href: Url;
-    children?: string;
+    children?: React.ReactNode;
     className?: string;
+    target?: "_blank"
 }
 
 export default function Lnk({ id, href, children, className }: LinkType) {
