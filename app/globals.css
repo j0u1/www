@@ -35,7 +35,6 @@
   --color-button-foreground: var(--button-foreground);
 }
 
-/* ✅ Обернуть в @layer base */
 @layer base {
 
   html,
