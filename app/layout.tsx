@@ -1,18 +1,20 @@
-import type { Metadata, Viewport } from "next";
-import { Onest } from "next/font/google";
-import "./globals.css";
-import { ColorThemeClientProvider } from "./components/UI/ColorTheme/ClientProvider";
-import { ColorThemeRoot } from "./components/UI/ColorTheme/Root";
-import { cookies } from "next/headers";
+import type { Metadata, Viewport } from 'next';
+import { Onest } from 'next/font/google';
+import './globals.css';
+import { ColorThemeClientProvider } from './components/UI/ColorTheme/ClientProvider';
+import { ColorThemeRoot } from './components/UI/ColorTheme/Root';
+import { cookies } from 'next/headers';
+import Footer from './components/Main/Footer';
+import LogoAndAvatar from './components/Main/Hero/LogoAndAvatar';
 
 const onest = Onest({
-  variable: "--font-onest",
-  subsets: ["latin"],
+  variable: '--font-onest',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "diy",
-  description: "Портфолия diy - фронтенд разработчик и UI/UI дизайнер",
+  title: 'diy',
+  description: 'Портфолия diy - фронтенд разработчик и UI/UI дизайнер',
   metadataBase: new URL('http://localhost:3000'),
   openGraph: {
     title: 'diy',
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
         url: '/images/metadata/ogImage.jpg',
         alt: 'diy',
       },
-    ]
+    ],
   },
 };
 
@@ -47,12 +49,14 @@ export const viewport: Viewport = {
   width: 'device-width',
   themeColor: '#4d8ff3',
   colorScheme: 'light dark',
-  maximumScale: 1
-}
+  maximumScale: 1,
+};
 
-export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   const cookieStore = await cookies();
-  const theme = cookieStore.get("colorMode")?.value ?? "dark";
+  const theme = cookieStore.get('colorMode')?.value ?? 'dark';
 
   return (
     <html lang="ru" className={theme} suppressHydrationWarning>
@@ -60,6 +64,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <ColorThemeClientProvider cookieTheme={theme}>
           <ColorThemeRoot>
             {children}
+            <Footer />
           </ColorThemeRoot>
         </ColorThemeClientProvider>
       </body>
