@@ -34,7 +34,7 @@ export default function Hero() {
 
       <div className="absolute right-0 bottom-0 flex flex-col gap-2">
         <div className="flex justify-between items-center w-full">
-          <p>Крайник проект</p>
+          <p>Крайний проект</p>
           <Lnk href="/projects">Все проекты</Lnk>
         </div>
         {projct && (
