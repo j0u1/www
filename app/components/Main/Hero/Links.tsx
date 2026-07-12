@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { GithubIcon } from 'lucide-react';
 import ModrinthLogo from '../../icons/Logos/ModrinthLogo';
 import Lnk from '../../UI/Lnk';
