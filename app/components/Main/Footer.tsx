@@ -25,7 +25,7 @@ export default function Footer() {
           </Lnk>
         ))}
       </div>
-      <QrCode className="size-24 ml-auto" />
+      <QrCode className="size-25 ml-auto" />
     </footer>
   )
 }
