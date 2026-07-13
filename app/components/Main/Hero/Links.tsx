@@ -24,7 +24,7 @@ export default function Links() {
             href={link.href}
             target="_blank"
           >
-            <Icon className="size-6" />
+            <Icon className="size-4 duration-300 transition-all lg:size-6" />
           </Lnk>
         );
       })}

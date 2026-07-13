@@ -14,8 +14,8 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="grid grid-cols-2 xl:grid-cols-3 w-full items-center pt-24 pb-20 border-t border-secondary">
-      <Lnk className="text-9xl size-fit" href={'/'}>
+    <footer className="grid md:grid-cols-2 xl:grid-cols-3 gap-12 md:gap-0 w-full justify-center md:justify-baseline items-center pt-24 pb-20 border-t border-secondary">
+      <Lnk className="text-7xl md:text-9xl size-fit mx-auto md:mx-0 duration-300 transition-all" href={'/'}>
         d1yy
       </Lnk>
       <div className="flex items-center gap-6 md:justify-end lg:justify-center md:ml-auto xl:mx-auto">

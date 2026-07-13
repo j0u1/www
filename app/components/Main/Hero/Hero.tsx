@@ -15,7 +15,7 @@ export default function Hero() {
   const { toggle } = useColorTheme();
 
   return (
-    <section className="flex flex-col gap-6 relative justify-center items-center transition-all duration-300 min-h-190 lg:min-h-200 lg:h-[94dvh]">
+    <section className="flex flex-col gap-6 relative justify-center items-center transition-all duration-300 min-h-190 lg:min-h-150 lg:h-[92dvh]">
       <div className="flex absolute top-0 right-0 flex-col gap-4 transition-all duration-300">
         <ChangeThemeButton toggle={toggle} />
       </div>
@@ -26,8 +26,8 @@ export default function Hero() {
         </span>
         <Cross />
       </H1>
-      <div className="relative flex items-center gap-4 z-10">
-        <p className="text-sm md:text-base text-additional duration-300 transition-all">Фронтенд-разработчик, веб-дизайнер</p>
+      <div className="relative flex items-center gap-2 lg:gap-4 z-10 duration-300 transition-all">
+        <p className="text-xs md:text-sm lg:text-base text-additional duration-300 transition-all">Фронтенд-разработчик, веб-дизайнер</p>
         <span className="text-sm text-additional-foreground">/</span>
         <Links />
       </div>
