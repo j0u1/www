@@ -18,8 +18,8 @@ export default function LogoAndAvatar() {
         className={`${logoClasses} ${changeLogo ? "translate-y-0" : "-translate-y-12 opacity-0 pointer-events-none"}`}
       />
       <Image
-        className={`${logoClasses} ${!changeLogo ? "-translate-y-8 md:-translate-y-10 lg:-translate-y-14" : "translate-y-12 opacity-0 pointer-events-none shrink-0"}`}
-        src="/images/avatar-mc.png"
+        className={`${logoClasses} ${!changeLogo ? "-translate-y-8 md:-translate-y-10 lg:-translate-y-14 xl:-translate-y-16" : "translate-y-12 opacity-0 pointer-events-none shrink-0"}`}
+        src="/images/avatar-mc.webp"
         alt="мой minecraft скин"
         width={56}
         height={56}

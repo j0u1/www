@@ -27,6 +27,8 @@ export default function ProjectCard({ project, className, noButton }: ProjectCar
           alt={`Project ${project.title}`}
           width={1280}
           height={300}
+          quality={70}
+          priority={true}
         />
 
         {project.title && (
