@@ -5,32 +5,32 @@ export const PROJECTS: Projects[] = [
     title: 'инциденты',
     description: 'Система управления инцидентами',
     image: '/images/projects/incidents.jpg',
-    link: 'https://incidents.d1yy.ru'
+    link: 'https://incidents.d1yy.dev'
   },
   {
     title: 'Docky',
     description: 'Поисковик по готовым Dockerfiles',
     image: '/images/projects/docky.jpg',
-    link: 'https://docky.d1yy.ru',
+    link: 'https://docky.d1yy.dev',
   },
   {
     title: 'Wire Search',
     description: 'Поиск через Google без лишних элементов',
     image: '/images/projects/wire.jpg',
-    link: 'https://wire.d1yy.ru',
+    link: 'https://wire.d1yy.dev',
   },
   {
     title: 'StarHub',
     description:
       'Платформа для просмотра звёзд конкретного пользователя на GitHub',
     image: '/images/projects/starhub.jpg',
-    link: 'https://starhub.d1yy.ru',
+    link: 'https://starhub.d1yy.dev',
   },
   {
     title: 'yat',
     description: 'yet another todo (ещё один todo-лист)',
     image: '/images/projects/yat.jpg',
-    link: 'https://yat.d1yy.ru',
+    link: 'https://yat.d1yy.dev',
   },
   {
     title: 'SP Pack (spoverlay*)',
