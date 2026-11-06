@@ -49,9 +49,9 @@ export default function ProjectSection() {
         <div className="grid lg:grid-cols-2 gap-0 overflow-hidden outline outline-secondary rounded-xl">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((pr, i) => (
-              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="grid grid-cols-3 items-center font-medium border-t even:border-l border-secondary first:border-t-transparent! duration-300 transition-colors hover:outline-accent">
+              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="grid grid-cols-3 group/project items-center font-medium border-t even:border-l border-secondary first:border-t-transparent! duration-300 transition-colors hover:outline-accent">
                 <div className="flex flex-col gap-2 p-6 col-span-2 max-h-32">
-                  <h3 className="text-foreground">{pr.title}</h3>
+                  <h3 className="text-foreground flex items-center gap-1.5">{pr.title} <ArrowUpRightIcon className="size-4.5 duration-200 transition-transform group-hover/project:translate-x-1.5 group-hover/project:-translate-y-1.5" /></h3>
                   <p className="line-clamp-2">{pr.description}</p>
                 </div>
                 <Image className="object-top object-cover bg-bg border-l border-secondary h-full max-h-32" src={pr.image} alt="" width={720} height={128} />
