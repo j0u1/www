@@ -3,7 +3,7 @@ const TOOLS = ["vite", "nodejs", "bun", "pnpm", "git", "github", "docker", "post
 
 export default function Stack() {
   return (
-    <div className="absolute bottom-0 left-1/2 -translate-1/2 flex flex-col items-center gap-4">
+    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col gap-4">
       <Row icons={TOOLS} size="size-7" />
       <Row icons={STACK} size="size-9" />
     </div>

@@ -11,13 +11,13 @@ export default function Hero() {
   const { toggle } = useColorTheme();
 
   return (
-    <section className="flex flex-col gap-6 relative justify-center items-center transition-all duration-300 min-h-190 lg:min-h-150 lg:h-[92dvh]">
+    <section className="relative transition-all duration-300 min-h-190 lg:min-h-150 xl:min-h-190 lg:h-[91dvh]">
       <ChangeThemeButton toggle={toggle} />
-      <div className='relative z-1 flex flex-col gap-2 items-center'>
+      <CrossGrid />
+      <div className="absolute inset-0 z-1 flex flex-col gap-2 items-center justify-center">
         <Me />
         <Description />
       </div>
-      <CrossGrid />
       <Skills />
     </section>
   );
