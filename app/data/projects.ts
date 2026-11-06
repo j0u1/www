@@ -3,7 +3,7 @@ import { Projects } from '../types/projects';
 export const PROJECTS: Projects[] = [
   {
     title: 'finity',
-    description: 'Система управления инцидентами.',
+    description: 'Простая библиотека конечных автоматов для TypeScript.',
     image: '/images/projects/finity.webp',
     link: 'https://npmx.dev/package/@j0u1/finity'
   },
