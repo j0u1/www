@@ -7,6 +7,7 @@ import { PROJECTS } from "../../../data/projects"
 import P from "../../UI/Heading/P";
 import Search from "./Search";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function ProjectSection() {
   const firstProject = PROJECTS[0]
@@ -45,12 +46,15 @@ export default function ProjectSection() {
           </H2>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </div>
-        <div className="flex flex-col gap-0">
+        <div className="grid grid-cols-2 gap-0 overflow-hidden outline outline-secondary rounded-xl">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((pr, i) => (
-              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="font-medium outline outline-secondary first:rounded-t-xl last:rounded-b-xl p-6 duration-300 transition-colors hover:outline-accent">
-                <h3 className="text-foreground">{pr.title}</h3>
-                <p>{pr.description}</p>
+              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="grid grid-cols-3 items-center font-medium border-t even:border-l border-secondary first:border-t-transparent! duration-300 transition-colors hover:outline-accent">
+                <div className="flex flex-col gap-2 p-6 col-span-2 max-h-32">
+                  <h3 className="text-foreground">{pr.title}</h3>
+                  <p className="line-clamp-2">{pr.description}</p>
+                </div>
+                <Image className="object-top object-cover bg-bg border-l border-secondary h-full max-h-32" src={pr.image} alt="" width={720} height={128} />
               </Lnk>
             ))
           ) : (
