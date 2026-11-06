@@ -1,6 +1,5 @@
-export type Skills = {
-  icon: React.ElementType,
-  title: string,
-  description: [string, string, string],
-  right?: boolean
+export interface SkillProps {
+  icons: string[];
+  size: string;
+  up?: boolean
 }
