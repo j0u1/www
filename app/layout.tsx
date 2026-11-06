@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'diy',
     description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
-    url: 'https://d1yy.ru',
+    url: 'https://d1yy.dev',
     images: [
       {
         url: '/images/metadata/ogImage.jpg',

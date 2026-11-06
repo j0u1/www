@@ -1,0 +1,2 @@
+export const STACK = ["ts", "js", "html", "css", "sass", "tailwind", "vue", "nuxt", "react", "nextjs"];
+export const TOOLS = ["vite", "nodejs", "bun", "pnpm", "git", "github", "docker", "postgres", "mysql", "figma"];

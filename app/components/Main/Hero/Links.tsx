@@ -1,8 +1,14 @@
-import { GithubIcon } from 'lucide-react';
+import { GithubIcon, LucideIcon } from 'lucide-react';
 import ModrinthLogo from '../../icons/Logos/ModrinthLogo';
 import Lnk from '../../UI/Lnk';
+import { ComponentType } from 'react';
 
-const links = [
+interface LinkType {
+  icon: ComponentType<{ className?: string }>,
+  href: string
+}
+
+const links: LinkType[] = [
   {
     icon: GithubIcon,
     href: 'https://github.com/j0u1',
@@ -15,16 +21,16 @@ const links = [
 
 export default function Links() {
   return (
-    <div className="mt-1 flex gap-3.5">
+    <div className="flex gap-3.5">
       {links.map((link, id) => {
         const Icon = link.icon;
         return (
           <Lnk
-          key={id}
+            key={id}
             href={link.href}
-            target="_blank"
+            target='_blank'
           >
-            <Icon className="size-4 duration-300 transition-all lg:size-6" />
+            <Icon className="size-4 duration-300 transition-all lg:size-5" />
           </Lnk>
         );
       })}

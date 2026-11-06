@@ -10,6 +10,6 @@ type LinkType = {
     target?: "_blank"
 }
 
-export default function Lnk({ id, href, children, className }: LinkType) {
-    return <Link className={`text-additional duration-250 transition-all hover:text-accent ${className}`} key={id} href={href}>{children}</Link>
+export default function Lnk({ id, href, children, className, target }: LinkType) {
+    return <Link className={`text-additional duration-250 transition-all hover:text-accent ${className}`} target={target} key={id} href={href}>{children}</Link>
 }
