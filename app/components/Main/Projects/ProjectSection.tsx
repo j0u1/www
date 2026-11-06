@@ -27,10 +27,9 @@ export default function ProjectSection() {
             <ArrowRightIcon className="size-3" />
           </Lnk>
         </div>
-        <Lnk href={firstProject.link ?? '#'} className="relative rounded-xl outline outline-secondary overflow-hidden" target="_blank">
-          <img src={firstProject.image} />
-          <div className="absolute right-0 -bottom-6 w-1/3 h-1/5 bg-black/70 blur-2xl" />
-          <div className="absolute bottom-8 right-8">
+        <Lnk href={firstProject.link ?? '#'} className="relative rounded-xl outline outline-secondary overflow-hidden max-h-180" target="_blank">
+          <img className="object-top object-contain size-full" src={firstProject.image} />
+          <div className="absolute bottom-8 right-8 drop-shadow-black drop-shadow-2xl">
             <ArrowUpRightIcon className="ml-auto size-5.5" />
             <span className="text-additional">
               {firstProject.description}
@@ -49,7 +48,7 @@ export default function ProjectSection() {
         <div className="flex flex-col gap-0">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((pr, i) => (
-              <Lnk key={i} href={pr.link ?? '#'} className="font-medium outline outline-secondary first:rounded-t-xl last:rounded-b-xl p-6 duration-300 transition-colors hover:outline-accent">
+              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="font-medium outline outline-secondary first:rounded-t-xl last:rounded-b-xl p-6 duration-300 transition-colors hover:outline-accent">
                 <h3 className="text-foreground">{pr.title}</h3>
                 <p>{pr.description}</p>
               </Lnk>
