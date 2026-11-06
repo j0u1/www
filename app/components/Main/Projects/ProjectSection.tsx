@@ -49,12 +49,12 @@ export default function ProjectSection() {
         <div className="outline-secondary grid gap-0 overflow-hidden rounded-xl outline lg:grid-cols-2">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((pr, i) => (
-              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="group/project border-secondary hover:outline-accent grid grid-cols-3 items-center border-t font-medium transition-colors duration-300 first:border-t-transparent! even:border-l">
+              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="group/project border-secondary hover:outline-accent grid grid-cols-3 items-center border-t font-medium transition-colors duration-300 min-h-32 first:border-t-transparent! even:border-l">
                 <div className="col-span-2 flex max-h-32 flex-col gap-2 p-6">
                   <h3 className="text-foreground flex items-center gap-1.5">{pr.title} <ArrowUpRightIcon className="size-4.5 transition-transform duration-200 group-hover/project:translate-x-1.5 group-hover/project:-translate-y-1.5" /></h3>
                   <p className="line-clamp-2">{pr.description}</p>
                 </div>
-                <Image className="bg-bg border-secondary h-full max-h-32 border-l object-cover object-top transition-all duration-200 group-hover/project:brightness-150" src={pr.image} alt="" width={720} height={128} />
+                <Image className="bg-bg border-secondary h-full max-h-32 min-h-32 bg-secondary border-l object-cover object-top transition-all duration-200 group-hover/project:brightness-150" src={pr.image} alt={`Проект ${pr.title}`} width={720} height={128} quality={70} loading="lazy" />
               </Lnk>
             ))
           ) : (
