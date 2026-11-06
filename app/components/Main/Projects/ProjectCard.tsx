@@ -22,7 +22,7 @@ export default function ProjectCard({ project, className, noButton }: ProjectCar
         className={`relative overflow-hidden ${project.link ? 'rounded-b-xl' : 'h-full rounded-b-none'}`}
       >
         <Image
-          className="w-full object-cover object-top xl:min-h-60 duration-200 transition-transform"
+          className="w-full object-cover object-top transition-transform duration-200 xl:min-h-60"
           src={project.image}
           alt={`Project ${project.title}`}
           width={1280}
@@ -35,7 +35,7 @@ export default function ProjectCard({ project, className, noButton }: ProjectCar
           <div
             className={`absolute left-4 space-y-2 ${project.position === 'bottom' ? 'bottom-4' : 'top-4'}`}
           >
-            <h2 className="text-sm font-medium text-additional">
+            <h2 className="text-additional text-sm font-medium">
               {project.title}
             </h2>
           </div>
@@ -43,8 +43,8 @@ export default function ProjectCard({ project, className, noButton }: ProjectCar
       </div>
 
       {project.link && !noButton && (
-        <div className="inline-block p-1.5 w-full cursor-pointer h-fit">
-          <div className="flex gap-2 justify-center items-center p-3.5 mx-auto font-medium text-center rounded-lg transition-all duration-500 text-neutral-300 dark:text-additional bg-button group-hover/project:bg-button-foreground">
+        <div className="inline-block h-fit w-full cursor-pointer p-1.5">
+          <div className="dark:text-additional bg-button group-hover/project:bg-button-foreground mx-auto flex items-center justify-center gap-2 rounded-lg p-3.5 text-center font-medium text-neutral-300 transition-all duration-500">
             <ArrowUpRightIcon
               className="transition-all duration-500 group-hover/project:translate-x-1 group-hover/project:-translate-y-0.75"
               size={20}

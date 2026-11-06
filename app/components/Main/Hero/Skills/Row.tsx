@@ -4,7 +4,7 @@ export function Row({ icons, size, up }: SkillProps) {
   return (
     <ul className="flex flex-wrap justify-center gap-4">
       {icons.map((id) => (
-        <li key={id} className="relative group bg-background rounded-lg outline outline-secondary">
+        <li key={id} className="group bg-background outline-secondary relative rounded-lg outline">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`https://skillicons.dev/icons?i=${id}`}

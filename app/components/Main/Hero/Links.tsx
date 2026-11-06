@@ -30,7 +30,7 @@ export default function Links() {
             href={link.href}
             target='_blank'
           >
-            <Icon className="size-4 duration-300 transition-all lg:size-5" />
+            <Icon className="size-4 transition-all duration-300 lg:size-5" />
           </Lnk>
         );
       })}

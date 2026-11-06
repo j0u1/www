@@ -28,9 +28,9 @@ export default function ProjectSection() {
             <ArrowRightIcon className="size-3" />
           </Lnk>
         </div>
-        <Lnk href={firstProject.link ?? '#'} className="relative rounded-xl outline outline-secondary overflow-hidden max-h-180" target="_blank">
-          <img className="object-top object-contain size-full" src={firstProject.image} />
-          <div className="absolute bottom-8 right-8 drop-shadow-black drop-shadow-2xl">
+        <Lnk href={firstProject.link ?? '#'} className="outline-secondary relative max-h-180 overflow-hidden rounded-xl outline" target="_blank">
+          <img className="size-full object-contain object-top" src={firstProject.image} />
+          <div className="absolute right-8 bottom-8 drop-shadow-2xl drop-shadow-black">
             <ArrowUpRightIcon className="ml-auto size-5.5" />
             <span className="text-additional">
               {firstProject.description}
@@ -46,19 +46,19 @@ export default function ProjectSection() {
           </H2>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </div>
-        <div className="grid lg:grid-cols-2 gap-0 overflow-hidden outline outline-secondary rounded-xl">
+        <div className="outline-secondary grid gap-0 overflow-hidden rounded-xl outline lg:grid-cols-2">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((pr, i) => (
-              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="grid grid-cols-3 group/project items-center font-medium border-t even:border-l border-secondary first:border-t-transparent! duration-300 transition-colors hover:outline-accent">
-                <div className="flex flex-col gap-2 p-6 col-span-2 max-h-32">
-                  <h3 className="text-foreground flex items-center gap-1.5">{pr.title} <ArrowUpRightIcon className="size-4.5 duration-200 transition-transform group-hover/project:translate-x-1.5 group-hover/project:-translate-y-1.5" /></h3>
+              <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="group/project border-secondary hover:outline-accent grid grid-cols-3 items-center border-t font-medium transition-colors duration-300 first:border-t-transparent! even:border-l">
+                <div className="col-span-2 flex max-h-32 flex-col gap-2 p-6">
+                  <h3 className="text-foreground flex items-center gap-1.5">{pr.title} <ArrowUpRightIcon className="size-4.5 transition-transform duration-200 group-hover/project:translate-x-1.5 group-hover/project:-translate-y-1.5" /></h3>
                   <p className="line-clamp-2">{pr.description}</p>
                 </div>
-                <Image className="object-top object-cover bg-bg border-l border-secondary h-full max-h-32 duration-200 transition-all group-hover/project:brightness-150" src={pr.image} alt="" width={720} height={128} />
+                <Image className="bg-bg border-secondary h-full max-h-32 border-l object-cover object-top transition-all duration-200 group-hover/project:brightness-150" src={pr.image} alt="" width={720} height={128} />
               </Lnk>
             ))
           ) : (
-            <div className="min-h-24"><P className="size-fit m-auto flex items-center gap-2">Такого проекта не существует <FrownIcon className="size-6" /></P></div>)}
+            <div className="min-h-24"><P className="m-auto flex size-fit items-center gap-2">Такого проекта не существует <FrownIcon className="size-6" /></P></div>)}
         </div>
       </section>
     </>

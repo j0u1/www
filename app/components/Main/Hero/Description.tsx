@@ -2,9 +2,9 @@ import Links from "./Links";
 
 export default function Description() {
   return (
-    <div className="relative z-2 flex items-center gap-2 lg:gap-3.5 duration-300 transition-all pointer-events-auto">
-      <p className="text-xs md:text-sm lg:text-base text-additional duration-300 transition-all">Фронтенд-разработчик, веб-дизайнер</p>
-      <span className="text-sm text-additional-foreground select-none">/</span>
+    <div className="pointer-events-auto relative z-2 flex items-center gap-2 transition-all duration-300 lg:gap-3.5">
+      <p className="text-additional text-xs transition-all duration-300 md:text-sm lg:text-base">Фронтенд-разработчик, веб-дизайнер</p>
+      <span className="text-additional-foreground text-sm select-none">/</span>
       <Links />
     </div>
   );

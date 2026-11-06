@@ -3,11 +3,11 @@ import Lnk from '../UI/Lnk';
 
 export default function Footer() {
   return (
-    <footer className="grid md:grid-cols-2 gap-12 md:gap-0 w-full justify-center md:justify-baseline items-center py-20 border-t border-secondary">
-      <Lnk className="text-7xl md:text-9xl size-fit mx-auto md:mx-0 duration-300 transition-all" href={'/'}>
+    <footer className="md:justify-baseline border-secondary grid w-full items-center justify-center gap-12 border-t py-20 md:grid-cols-2 md:gap-0">
+      <Lnk className="mx-auto size-fit text-7xl transition-all duration-300 md:mx-0 md:text-9xl" href={'/'}>
         d1yy
       </Lnk>
-      <QrCode className="hidden xl:block size-25 ml-auto text-additional" />
+      <QrCode className="text-additional ml-auto hidden size-25 xl:block" />
     </footer>
   );
 }

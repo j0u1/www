@@ -24,11 +24,11 @@ export default function Projects() {
 
   return (
     <section className="space-y-4 transition-all duration-300 lg:space-y-8">
-      <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
+      <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
         <H1>
           <ChevronLeftIcon
             onClick={() => router.push('/')}
-            className="size-8.5 cursor-pointer active:scale-80 hover:text-accent duration-300 transition-all"
+            className="hover:text-accent size-8.5 cursor-pointer transition-all duration-300 active:scale-80"
           />
           Проекты
         </H1>
