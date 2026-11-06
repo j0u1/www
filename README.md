@@ -1,6 +1,7 @@
-Проект на [Next.js](https://nextjs.org) (React), [Tailwind](https://tailwindcss.com), иконки [LucideIcons](https://lucide.dev)
+Мой сайт-портфолио, написанный на [Next.js](https://nextjs.org) (React), [Tailwind](https://tailwindcss.com), иконки [LucideIcons](https://lucide.dev)
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c87de39-4a14-4e4e-8716-6fb46a5cdd38" />
+<img width="1430" height="865" alt="image" src="https://github.com/user-attachments/assets/a7028e2e-a7fc-4f4c-b5e9-84120be63239" />
+
 
 ## Первоначальная настройка
 
