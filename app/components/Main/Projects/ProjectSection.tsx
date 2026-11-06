@@ -54,7 +54,7 @@ export default function ProjectSection() {
                   <h3 className="text-foreground flex items-center gap-1.5">{pr.title} <ArrowUpRightIcon className="size-4.5 duration-200 transition-transform group-hover/project:translate-x-1.5 group-hover/project:-translate-y-1.5" /></h3>
                   <p className="line-clamp-2">{pr.description}</p>
                 </div>
-                <Image className="object-top object-cover bg-bg border-l border-secondary h-full max-h-32" src={pr.image} alt="" width={720} height={128} />
+                <Image className="object-top object-cover bg-bg border-l border-secondary h-full max-h-32 duration-200 transition-all group-hover/project:brightness-150" src={pr.image} alt="" width={720} height={128} />
               </Lnk>
             ))
           ) : (
