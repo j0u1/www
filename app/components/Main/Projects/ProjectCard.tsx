@@ -1,58 +1,36 @@
 import { Projects } from '@/app/types/projects';
 import { ArrowUpRightIcon } from 'lucide-react';
 import Image from 'next/image';
+import Lnk from '../../UI/Lnk';
 
-type ProjectCardType = {
+type ProjectCardProps = {
   project: Projects;
   className?: string;
-  noButton?: boolean;
 };
 
-export default function ProjectCard({ project, className, noButton }: ProjectCardType) {
-  const Component = project.link ? 'a' : 'div';
+export default function ProjectCard({ project, className }: ProjectCardProps) {
   return (
-    <Component
-      draggable={!!project.link}
-      key={project.title}
-      className={`break-inside-avoid overflow-hidden rounded-xl outline outline-secondary/70 h-fit group/project inline-block select-none transition-all duration-300 w-full md:min-h-60.5 ${project.link ? 'cursor-pointer hover:brightness-125' : 'pointer-events-none'} ${className}`}
-      href={project.link}
+    <Lnk
+      href={project.link ?? '#'}
       target="_blank"
+      className={`group/project border-secondary hover:outline-accent grid grid-cols-3 items-center border-t font-medium transition-colors duration-300 min-h-32 first:border-t-transparent! even:border-l ${className ?? ''}`}
     >
-      <div
-        className={`relative overflow-hidden ${project.link ? 'rounded-b-xl' : 'h-full rounded-b-none'}`}
-      >
-        <Image
-          className="w-full object-cover object-top transition-transform duration-200 xl:min-h-60"
-          src={project.image}
-          alt={`Project ${project.title}`}
-          width={1280}
-          height={300}
-          quality={70}
-          priority={true}
-        />
-
-        {project.title && (
-          <div
-            className={`absolute left-4 space-y-2 ${project.position === 'bottom' ? 'bottom-4' : 'top-4'}`}
-          >
-            <h2 className="text-additional text-sm font-medium">
-              {project.title}
-            </h2>
-          </div>
-        )}
+      <div className="col-span-2 flex max-h-32 flex-col gap-2 p-6">
+        <h3 className="text-foreground flex items-center gap-1.5">
+          {project.title}{' '}
+          <ArrowUpRightIcon className="size-4.5 transition-transform duration-200 group-hover/project:translate-x-1.5 group-hover/project:-translate-y-1.5" />
+        </h3>
+        <p className="line-clamp-2">{project.description}</p>
       </div>
-
-      {project.link && !noButton && (
-        <div className="inline-block h-fit w-full cursor-pointer p-1.5">
-          <div className="dark:text-additional bg-button group-hover/project:bg-button-foreground mx-auto flex items-center justify-center gap-2 rounded-lg p-3.5 text-center font-medium text-neutral-300 transition-all duration-500">
-            <ArrowUpRightIcon
-              className="transition-all duration-500 group-hover/project:translate-x-1 group-hover/project:-translate-y-0.75"
-              size={20}
-            />
-            Посмотреть
-          </div>
-        </div>
-      )}
-    </Component>
+      <Image
+        className="bg-bg border-secondary h-full max-h-32 min-h-32 bg-secondary border-l object-cover object-top transition-all duration-200 group-hover/project:brightness-150"
+        src={project.image}
+        alt={`Проект ${project.title}`}
+        width={720}
+        height={128}
+        quality={70}
+        loading="lazy"
+      />
+    </Lnk>
   );
 }

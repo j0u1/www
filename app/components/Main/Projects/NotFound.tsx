@@ -1,11 +1,12 @@
-export default function NotFound() {
+import P from '../../UI/Heading/P';
+import { FrownIcon } from 'lucide-react';
+
+export default function NotFound({ className }: { className?: string }) {
   return (
-    <div className="text-additional mb-8 flex items-center justify-center gap-4">
-      <span className="text-3xl text-(--additional-foreground)">:/</span>
-      <p className="flex flex-col">
-        <span>Такого проекта не существует,</span>
-        <span>перепроверьте введёное значение</span>
-      </p>
+    <div className={`col-span-full flex min-h-24 ${className ?? ''}`}>
+      <P className="m-auto flex size-fit items-center gap-2">
+        Такого проекта не существует <FrownIcon className="size-6" />
+      </P>
     </div>
-  )
+  );
 }
