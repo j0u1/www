@@ -10,7 +10,7 @@ import { useState } from "react";
 
 export default function ProjectSection() {
   const firstProject = PROJECTS[0]
-  const [searchTerm, setSearchTerm] = useState("bgffg")
+  const [searchTerm, setSearchTerm] = useState("")
 
   const query = searchTerm.trim().toLowerCase()
   const filteredProjects = PROJECTS.filter(pr => !query || pr.title?.toLowerCase().includes(query) || pr.description.toLowerCase().includes(query))
