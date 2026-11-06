@@ -12,7 +12,7 @@ export default function LogoAndAvatar() {
   return (
     <div
       onClick={() => setChangeLogo(!changeLogo)}
-      className={`${sizeClass} cursor-pointer active:scale-95`}
+      className={`${sizeClass} cursor-pointer active:scale-95 select-none`}
     >
       <Logo
         className={`${logoClasses} ${changeLogo ? "translate-y-0" : "-translate-y-12 opacity-0 pointer-events-none"}`}
