@@ -5,6 +5,7 @@ import { useColorTheme } from '../../UI/ColorTheme/useColorTheme';
 import CrossGrid from './Cross';
 import Me from './Me';
 import Description from './Description';
+import Skills from './Skills';
 
 export default function Hero() {
   const { toggle } = useColorTheme();
@@ -17,6 +18,7 @@ export default function Hero() {
         <Description />
       </div>
       <CrossGrid />
+      <Skills />
     </section>
   );
 }
