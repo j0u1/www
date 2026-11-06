@@ -5,11 +5,7 @@ const links = [
   {
     title: 'Проекты',
     href: './projects',
-  },
-  {
-    title: 'Скиллы',
-    href: './skills',
-  },
+  }
 ];
 
 export default function Footer() {
