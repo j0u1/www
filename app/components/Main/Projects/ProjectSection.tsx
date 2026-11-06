@@ -46,7 +46,7 @@ export default function ProjectSection() {
           </H2>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </div>
-        <div className="grid grid-cols-2 gap-0 overflow-hidden outline outline-secondary rounded-xl">
+        <div className="grid lg:grid-cols-2 gap-0 overflow-hidden outline outline-secondary rounded-xl">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((pr, i) => (
               <Lnk key={i} href={pr.link ?? '#'} target="_blank" className="grid grid-cols-3 items-center font-medium border-t even:border-l border-secondary first:border-t-transparent! duration-300 transition-colors hover:outline-accent">
