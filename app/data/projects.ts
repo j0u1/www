@@ -2,6 +2,12 @@ import { Projects } from '../types/projects';
 
 export const PROJECTS: Projects[] = [
   {
+    title: 'finity',
+    description: 'Система управления инцидентами.',
+    image: '/images/projects/finity.webp',
+    link: 'https://npmx.dev/package/@j0u1/finity'
+  },
+  {
     title: 'инциденты',
     description: 'Система управления инцидентами.',
     image: '/images/projects/incidents.jpg',
