@@ -40,14 +40,14 @@ export const PROJECTS: Projects[] = [
   },
   {
     title: 'SP Pack',
-    description: 'Сайт для скачивания общего ресурс пака СП5 от команды spoverly.',
+    description: 'Сайт для скачивания общего ресурс пака СП5 от команды spoverlay.',
     image: '/images/projects/sppack.jpg',
     link: 'https://pack.spoverlay.ru',
   },
   {
     title: 'Портал Услуг',
     description:
-      'Инструмент для МЮ СП5 редактированием и созданием территорий и паспортов от команды spoverly.',
+      'Инструмент для МЮ СП5 редактированием и созданием территорий и паспортов от команды spoverlay.',
     image: '/images/projects/portal.jpg',
     link: 'https://portal.spoverlay.ru',
     position: 'bottom',
@@ -66,12 +66,12 @@ export const PROJECTS: Projects[] = [
   // },
   {
     title: 'Gallery',
-    description: 'Галерея артов СП5, в которой собраны некоторые арты сервера от команды spoverly.',
+    description: 'Галерея артов СП5, в которой собраны некоторые арты сервера от команды spoverlay.',
     image: '/images/projects/gallery.jpg',
   },
   {
     title: 'SPEMOTES',
-    description: 'Сайт с более удобной загрузкой SPEMOTES для мода EmoteCraft от команды spoverly.',
+    description: 'Сайт с более удобной загрузкой SPEMOTES для мода EmoteCraft от команды spoverlay.',
     image: '/images/projects/spemotes.jpg',
     link: 'https://spemotes.spoverlay.ru/',
   },
