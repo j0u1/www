@@ -13,11 +13,11 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  title: 'diy',
-  description: 'Портфолия diy - фронтенд разработчик и UI/UI дизайнер',
+  title: 'Дий - фронтенд разработчик и UI/UI дизайнер',
+  description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
   metadataBase: new URL('http://localhost:3000'),
   openGraph: {
-    title: 'diy',
+    title: 'Дий - фронтенд разработчик и UI/UI дизайнер',
     description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
     url: 'https://d1yy.dev',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: '/images/metadata/ogImage.jpg',
         width: 1200,
         height: 675,
-        alt: 'diy',
+        alt: 'Дий - фронтенд разработчик и UI/UI дизайнер',
       },
     ],
     type: 'website',
@@ -34,12 +34,12 @@ export const metadata: Metadata = {
   creator: 'd1yy',
   twitter: {
     card: 'summary_large_image',
-    title: 'diy',
+    title: 'Дий - фронтенд разработчик и UI/UI дизайнер',
     description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
     images: [
       {
         url: '/images/metadata/ogImage.jpg',
-        alt: 'diy',
+        alt: 'Дий - фронтенд разработчик и UI/UI дизайнер',
       },
     ],
   },
