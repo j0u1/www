@@ -34,7 +34,7 @@ export const PROJECTS: Projects[] = [
   },
   {
     title: 'yat',
-    description: 'yet another todo (ещё один todo-лист)',
+    description: 'yet another todo (ещё один todo-лист).',
     image: '/images/projects/yat.jpg',
     link: 'https://github.com/j0u1/yat',
   },
