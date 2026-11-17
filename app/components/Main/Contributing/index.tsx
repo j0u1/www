@@ -15,7 +15,7 @@ export default function Contributing() {
           Открытые проекты, в которые я вносил свой вклад
         </p>
       </div>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 lg:flex-row">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 lg:flex-row">
         {contributingsProjects.map((p, i) => (
           <ContributeItem key={i} {...p} />
         ))}
