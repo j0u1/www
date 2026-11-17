@@ -3,4 +3,9 @@ export type Projects = {
   description: string,
   image: string,
   link?: string,
+  tags: string[],
+}
+
+type Tags = {
+  value: string
 }

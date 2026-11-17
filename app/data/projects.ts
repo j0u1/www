@@ -5,25 +5,29 @@ export const PROJECTS: Projects[] = [
     title: 'finity',
     description: 'Простая библиотека конечных автоматов для TypeScript.',
     image: '/images/projects/finity.webp',
-    link: 'https://npmx.dev/package/@j0u1/finity'
+    link: 'https://npmx.dev/package/@j0u1/finity',
+    tags: ['TypeScript', 'npm', 'библиотека']
   },
   {
     title: 'инциденты',
     description: 'Система управления инцидентами.',
     image: '/images/projects/incidents.jpg',
-    link: 'https://github.com/j0u1/incidents'
+    link: 'https://github.com/j0u1/incidents',
+    tags: ['Nuxt', 'Elysia', 'Typescript', 'Prism ORM', 'fullstack']
   },
   {
     title: 'Docky',
     description: 'Поисковик по готовым Dockerfiles.',
     image: '/images/projects/docky.jpg',
     link: 'https://github.com/j0u1/Docky',
+    tags: ['Nuxt', 'Docker', 'поиск']
   },
   {
     title: 'Wire Search',
     description: 'Поиск через Google без лишних элементов.',
     image: '/images/projects/wire.jpg',
     link: 'https://github.com/j0u1/wire-search',
+    tags: ['Angular', 'Typescript', 'муьти-поисковик']
   },
   {
     title: 'StarHub',
@@ -31,18 +35,21 @@ export const PROJECTS: Projects[] = [
       'Платформа для просмотра звёзд конкретного пользователя на GitHub.',
     image: '/images/projects/starhub.jpg',
     link: 'https://github.com/j0u1/starhub',
+    tags: ['Nuxt', 'React', 'Github API']
   },
   {
     title: 'yat',
     description: 'yet another todo (ещё один todo-лист).',
     image: '/images/projects/yat.jpg',
     link: 'https://github.com/j0u1/yat',
+    tags: ['Vite', 'React', 'todo']
   },
   {
     title: 'SP Pack',
     description: 'Сайт для скачивания общего ресурс пака СП5 от команды spoverlay.',
     image: '/images/projects/sppack.jpg',
     link: 'https://pack.spoverlay.ru',
+    tags: ['spoverlay', 'Minecraft']
   },
   {
     title: 'Портал Услуг',
@@ -50,6 +57,7 @@ export const PROJECTS: Projects[] = [
       'Инструмент для МЮ СП5 редактированием и созданием территорий и паспортов от команды spoverlay.',
     image: '/images/projects/portal.jpg',
     link: 'https://portal.spoverlay.ru',
+    tags: ['spoverlay', 'Minecraft']
   },
   // {
   //   title: 'PawVille Community',
@@ -67,11 +75,13 @@ export const PROJECTS: Projects[] = [
     title: 'Gallery',
     description: 'Галерея артов СП5, в которой собраны некоторые арты сервера от команды spoverlay.',
     image: '/images/projects/gallery.jpg',
+    tags: ['spoverlay', 'Minecraft']
   },
   {
     title: 'SPEMOTES',
     description: 'Сайт с более удобной загрузкой SPEMOTES для мода EmoteCraft от команды spoverlay.',
     image: '/images/projects/spemotes.jpg',
     link: 'https://spemotes.spoverlay.ru/',
+    tags: ['spoverlay', 'Minecraft']
   },
 ] as const;
