@@ -36,6 +36,9 @@
   --color-treaty: var(--treaty);
   --color-button: var(--button);
   --color-button-foreground: var(--button-foreground);
+
+  /* Разрешение экрана */
+  --breakpoint-3xl: 120rem;
 }
 
 @layer base {
