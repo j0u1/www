@@ -13,11 +13,11 @@ export default function LatestProject() {
 
   return (
     <section className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <H2 className="flex items-center gap-4">
+      <div className="flex flex-col md:flex-row md:items-center gap-2 justify-between">
+        <H2 className="flex items-center gap-2">
           <span>{firstProject.title}</span> <P className="mt-1">— крайний проект</P>
         </H2>
-        <Lnk href="#projects" className="flex items-center gap-2">
+        <Lnk href="#projects" className="flex items-center gap-2 ml-auto md:ml-0">
           <span>Все проекты</span>
           <ArrowRightIcon className="size-3" />
         </Lnk>
