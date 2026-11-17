@@ -29,7 +29,7 @@ export default function LatestProject() {
           target="_blank"
         >
           <img
-            className="h-full object-cover object-top-left"
+            className="size-full max-h-125 object-cover object-top-left"
             src={firstProject.image}
             alt={firstProject.title}
           />
@@ -40,7 +40,7 @@ export default function LatestProject() {
           <div className='absolute left-0 bottom-0 right-0 h-32 bg-linear-to-t from-background to-transparent' />
         </Lnk>
 
-        <div className='w-1/2 flex flex-col border border-secondary border-l-0 overflow-hidden'>
+        <div className='w-1/2 flex flex-col border border-secondary border-l-0 overflow-hidden md:rounded-r-xl'>
           {otherProjects.map((p, i) => (
             <ProjectCard key={i} project={p} className='even:border-l-0!' />
           ))}
