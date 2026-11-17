@@ -20,7 +20,7 @@ export default function OtherProjects() {
 
   return (
     <section id="projects" className="flex flex-col gap-4">
-      <div className="flex flex-col md:flex-row gap-2 md:items-center justify-between">
+      <div className="flex flex-col justify-between gap-2 md:flex-row md:items-center">
         <H2 className="flex items-center gap-4">Другие проекты</H2>
         <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>

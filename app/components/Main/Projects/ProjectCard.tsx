@@ -23,7 +23,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
         <p className="line-clamp-2">{project.description}</p>
       </div>
       <Image
-        className="bg-bg border-secondary h-full max-h-32 min-h-32 bg-secondary border-l object-cover object-top transition-all duration-200 group-hover/project:brightness-150"
+        className="bg-bg border-secondary bg-secondary h-full max-h-32 min-h-32 border-l object-cover object-top transition-all duration-200 group-hover/project:brightness-150"
         src={project.image}
         alt={`Проект ${project.title}`}
         width={720}

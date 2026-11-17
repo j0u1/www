@@ -13,11 +13,11 @@ export default function LatestProject() {
 
   return (
     <section className="flex flex-col gap-4">
-      <div className="flex flex-col md:flex-row md:items-center gap-2 justify-between">
+      <div className="flex flex-col justify-between gap-2 md:flex-row md:items-center">
         <H2 className="flex items-center gap-2">
           <span>{firstProject.title}</span> <P className="mt-1">— крайний проект</P>
         </H2>
-        <Lnk href="#projects" className="flex items-center gap-2 ml-auto md:ml-0">
+        <Lnk href="#projects" className="ml-auto flex items-center gap-2 md:ml-0">
           <span>Все проекты</span>
           <ArrowRightIcon className="size-3" />
         </Lnk>
@@ -25,7 +25,7 @@ export default function LatestProject() {
       <div className="flex flex-col lg:flex-row">
         <Lnk
           href={firstProject.link ?? '#'}
-          className="lg:w-1/2 border-secondary relative max-h-180 overflow-hidden rounded-t-xl lg:rounded-t-none lg:rounded-l-xl border group/project"
+          className="border-secondary group/project relative max-h-180 overflow-hidden rounded-t-xl border lg:w-1/2 lg:rounded-t-none lg:rounded-l-xl"
           target="_blank"
         >
           <img
@@ -33,14 +33,14 @@ export default function LatestProject() {
             src={firstProject.image}
             alt={firstProject.title}
           />
-          <div className="absolute flex flex-col items-end right-8 left-8 bottom-8 z-1">
+          <div className="absolute right-8 bottom-8 left-8 z-1 flex flex-col items-end">
             <ArrowIcon />
             <span className="text-additional">{firstProject.description}</span>
           </div>
-          <div className='absolute left-0 bottom-0 right-0 h-32 bg-linear-to-t from-background to-transparent' />
+          <div className='from-background absolute right-0 bottom-0 left-0 h-32 bg-linear-to-t to-transparent' />
         </Lnk>
 
-        <div className='lg:w-1/2 flex flex-col border border-secondary border-t-0 lg:border-t lg:border-l-0 overflow-hidden rounded-r-none rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl'>
+        <div className='border-secondary flex flex-col overflow-hidden rounded-r-none rounded-b-xl border border-t-0 lg:w-1/2 lg:rounded-r-xl lg:rounded-bl-none lg:border-t lg:border-l-0'>
           {otherProjects.map((p, i) => (
             <ProjectCard key={i} project={p} className='even:border-l-0!' />
           ))}
