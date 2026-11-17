@@ -1,6 +1,6 @@
 import { ClassNameType } from "@/app/types/className";
 
-export default function Logo({ ClassNameType }: ClassNameType) {
+export default function Logo({ className }: ClassNameType) {
   return (
     <svg className={`${className}`} width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="512" height="512" rx="256" fill="#262D4A" />
