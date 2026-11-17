@@ -11,7 +11,7 @@ export default function OtherProjects() {
   const [searchTerm, setSearchTerm] = useState('');
 
   const query = searchTerm.trim().toLowerCase();
-  const filteredProjects = PROJECTS.filter(
+  const filteredProjects = PROJECTS.slice(5).filter(
     pr =>
       !query ||
       pr.title?.toLowerCase().includes(query) ||
