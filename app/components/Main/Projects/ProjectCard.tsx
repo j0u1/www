@@ -13,7 +13,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
     <Lnk
       href={project.link ?? '#'}
       target="_blank"
-      className={`group/project border-secondary hover:outline-accent grid grid-cols-3 items-center border-t font-medium transition-colors duration-300 min-h-32 first:border-t-transparent! even:border-l ${className ?? ''}`}
+      className={`group/project border-secondary hover:outline-accent grid grid-cols-3 items-center border-t font-medium transition-colors duration-300 min-h-32 first:border-t-transparent! even:border-l nth-last-2:even:border-b last:odd:border-r ${className ?? ''}`}
     >
       <div className="col-span-2 flex max-h-32 flex-col gap-2 p-6">
         <h3 className="text-foreground flex items-center gap-1.5">
