@@ -1,7 +1,7 @@
 import { Projects } from '@/app/types/projects';
-import { ArrowUpRightIcon } from 'lucide-react';
 import Image from 'next/image';
 import Lnk from '../../UI/Lnk';
+import ArrowIcon from './Arrow';
 
 type ProjectCardProps = {
   project: Projects;
@@ -18,7 +18,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
       <div className="col-span-2 flex max-h-32 flex-col gap-2 p-6">
         <h3 className="text-foreground flex items-center gap-1.5">
           {project.title}{' '}
-          <ArrowUpRightIcon className="size-4.5 transition-transform duration-200 group-hover/project:translate-x-1.5 group-hover/project:-translate-y-1.5" />
+          <ArrowIcon />
         </h3>
         <p className="line-clamp-2">{project.description}</p>
       </div>
