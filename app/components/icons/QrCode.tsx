@@ -1,8 +1,6 @@
-type QrCodeType = {
-  className?: string;
-}
+import { ClassNameType } from "@/app/types/className";
 
-export default function QrCode({ className }: QrCodeType) {
+export default function QrCode({ className }: ClassNameType) {
   return (
     <svg className={className} viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M8 0H0V8H8V0Z" fill="currentColor" />

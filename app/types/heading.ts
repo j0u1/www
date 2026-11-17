@@ -1,4 +1,5 @@
+import { ClassNameType } from "./className";
+
 export type headingProps = {
-  className?: string;
   children: React.ReactNode;
-}
+} & ClassNameType

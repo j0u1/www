@@ -1,8 +1,8 @@
-import { iconProps } from "@/app/types/icons";
+import { ClassNameType } from "@/app/types/className";
 
 
 
-export default function FigmaLogo({ className }: iconProps) {
+export default function FigmaLogo({ className }: ClassNameType) {
   return (
     <svg className={`${className}`} width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M42.3333 128C54.1093 128 63.6667 118.443 63.6667 106.667V85.3333H42.3333C30.5573 85.3333 21 94.8906 21 106.667C21 118.443 30.5573 128 42.3333 128Z" fill="#0ACF83" />

@@ -1,11 +1,9 @@
-type ModrinthType = {
-  className?: string;
-};
+import { ClassNameType } from "@/app/types/className";
 
-export default function ModrinthLogo({ className }: ModrinthType) {
+export default function ModrinthLogo({ className }: ClassNameType) {
   return (
     <svg
-    className={className}
+      className={className}
       width="151"
       height="150"
       viewBox="0 0 151 150"
