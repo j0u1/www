@@ -3,10 +3,22 @@ import { CrossElement } from "./Cross";
 
 export default function CrossGrid() {
   return (
-    <div className="absolute inset-0 z-0 grid w-full auto-rows-13.25 grid-cols-[repeat(auto-fill,61.9px)] overflow-hidden xl:grid-cols-[repeat(auto-fill,62.5px)] 2xl:grid-cols-[repeat(auto-fill,53px)]">
-      {Array.from({ length: 330 }, (_, i) => (
-        <CrossElement key={i} />
-      ))}
+    <div className="absolute inset-0 z-0 w-full auto-rows-13.25 overflow-hidden">
+      <div className="hidden pointer-events-none xl:pointer-events-auto xl:grid xl:grid-cols-[repeat(auto-fill,62.5px)] 2xl:hidden">
+        {Array.from({ length: 330 }, (_, i) => (
+          <CrossElement key={i} />
+        ))}
+      </div>
+      <div className="hidden pointer-events-none 2xl:pointer-events-auto 2xl:grid 2xl:grid-cols-[repeat(auto-fill,53px)] 3xl:hidden">
+        {Array.from({ length: 665 }, (_, i) => (
+          <CrossElement key={i} />
+        ))}
+      </div>
+      <div className="hidden pointer-events-none 3xl:pointer-events-auto 3xl:grid 2xl:grid-cols-[repeat(auto-fill,53px)]">
+        {Array.from({ length: 703 }, (_, i) => (
+          <CrossElement key={i} />
+        ))}
+      </div>
     </div>
   );
 }
