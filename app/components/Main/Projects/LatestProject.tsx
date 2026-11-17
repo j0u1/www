@@ -25,7 +25,7 @@ export default function LatestProject() {
       <div className="flex flex-col lg:flex-row">
         <Lnk
           href={firstProject.link ?? '#'}
-          className="w-1/2 border-secondary relative max-h-180 overflow-hidden roudned-xl md:rounded-l-xl border group/project"
+          className="lg:w-1/2 border-secondary relative max-h-180 overflow-hidden rounded-t-xl lg:rounded-t-none lg:rounded-l-xl border group/project"
           target="_blank"
         >
           <img
@@ -40,7 +40,7 @@ export default function LatestProject() {
           <div className='absolute left-0 bottom-0 right-0 h-32 bg-linear-to-t from-background to-transparent' />
         </Lnk>
 
-        <div className='w-1/2 flex flex-col border border-secondary border-l-0 overflow-hidden md:rounded-r-xl'>
+        <div className='lg:w-1/2 flex flex-col border border-secondary border-t-0 lg:border-t lg:border-l-0 overflow-hidden rounded-r-none rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl'>
           {otherProjects.map((p, i) => (
             <ProjectCard key={i} project={p} className='even:border-l-0!' />
           ))}
