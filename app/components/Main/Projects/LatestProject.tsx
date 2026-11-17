@@ -33,7 +33,7 @@ export default function LatestProject() {
             src={firstProject.image}
             alt={firstProject.title}
           />
-          <div className="absolute right-8 bottom-8 z-1">
+          <div className="absolute flex flex-col items-end right-8 left-8 bottom-8 z-1">
             <ArrowIcon />
             <span className="text-additional">{firstProject.description}</span>
           </div>
