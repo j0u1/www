@@ -22,7 +22,7 @@ export default function LatestProject() {
           <ArrowRightIcon className="size-3" />
         </Lnk>
       </div>
-      <div className='flex flex-col gap-4 lg:flex-row'>
+      <div className="flex flex-col gap-4 lg:flex-row">
         <Lnk
           href={firstProject.link ?? '#'}
           className="w-full outline-secondary relative max-h-180 overflow-hidden rounded-xl outline  group/project"
@@ -40,9 +40,9 @@ export default function LatestProject() {
           <div className='absolute left-0 bottom-0 right-0 h-32 bg-linear-to-t from-background to-transparent' />
         </Lnk>
 
-        <div className='flex flex-col gap-2 border border-secondary rounded-xl'>
+        <div className='flex flex-col border border-secondary rounded-xl overflow-hidden'>
           {otherProjects.map((p, i) => (
-            <ProjectCard key={i} project={p} />
+            <ProjectCard key={i} project={p} className='even:border-l-0!' />
           ))}
         </div>
       </div>
