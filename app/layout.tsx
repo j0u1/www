@@ -13,19 +13,19 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  title: 'Дий - фронтенд разработчик и UI/UI дизайнер',
-  description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
+  title: 'Дий - фуллстек разработчик и UI/UI дизайнер',
+  description: 'Портфолио diy - фуллстек разработчик и UI/UI дизайнер',
   metadataBase: new URL('http://localhost:3000'),
   openGraph: {
-    title: 'Дий - фронтенд разработчик и UI/UI дизайнер',
-    description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
+    title: 'Дий - фуллстек разработчик и UI/UI дизайнер',
+    description: 'Портфолио diy - фуллстек разработчик и UI/UI дизайнер',
     url: 'https://d1yy.dev',
     images: [
       {
         url: '/images/metadata/ogImage.jpg',
         width: 1200,
         height: 675,
-        alt: 'Дий - фронтенд разработчик и UI/UI дизайнер',
+        alt: 'Дий - фуллстек разработчик и UI/UI дизайнер',
       },
     ],
     type: 'website',
@@ -34,12 +34,12 @@ export const metadata: Metadata = {
   creator: 'd1yy',
   twitter: {
     card: 'summary_large_image',
-    title: 'Дий - фронтенд разработчик и UI/UI дизайнер',
-    description: 'Портфолио diy - фронтенд разработчик и UI/UI дизайнер',
+    title: 'Дий - фуллстек разработчик и UI/UI дизайнер',
+    description: 'Портфолио diy - фуллстек разработчик и UI/UI дизайнер',
     images: [
       {
         url: '/images/metadata/ogImage.jpg',
-        alt: 'Дий - фронтенд разработчик и UI/UI дизайнер',
+        alt: 'Дий - фуллстек разработчик и UI/UI дизайнер',
       },
     ],
   },
