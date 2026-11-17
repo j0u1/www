@@ -50,7 +50,6 @@ export const PROJECTS: Projects[] = [
       'Инструмент для МЮ СП5 редактированием и созданием территорий и паспортов от команды spoverlay.',
     image: '/images/projects/portal.jpg',
     link: 'https://portal.spoverlay.ru',
-    position: 'bottom',
   },
   // {
   //   title: 'PawVille Community',
